@@ -9,7 +9,7 @@ h1Nums.forEach((e) => {
   for (let i = 0; i < iteration; i++) {
     setTimeout(() => {
       val += num / iteration;
-      e.innerHTML = val;
+      e.innerHTML = Math.round(val);
     }, (i * duration) / iteration);
   }
 });
