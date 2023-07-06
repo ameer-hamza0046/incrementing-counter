@@ -1,12 +1,15 @@
 const h1Nums = document.querySelectorAll(".container > .box > h1");
 
 const duration = 2000;
+const iteration = 200;
 
 h1Nums.forEach((e) => {
   const num = Number(e.innerHTML);
-  for (let i = 1; i <= num; i++) {
+  let val = 0;
+  for (let i = 0; i < iteration; i++) {
     setTimeout(() => {
-      e.innerHTML = i;
-    }, (i * duration) / num);
+      val += num / iteration;
+      e.innerHTML = val;
+    }, (i * duration) / iteration);
   }
 });
