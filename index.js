@@ -10,14 +10,3 @@ h1Nums.forEach((e) => {
     }, (i * duration) / num);
   }
 });
-
-const extra = document.createElement("div");
-// let str = ""
-// nums.forEach(e => {
-//     str += e.innerHTML;
-// })
-
-// extra.innerHTML = str;
-
-// const body = document.querySelector("body")
-// body.appendChild(extra)
